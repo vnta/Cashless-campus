@@ -1,0 +1,4 @@
+<head>
+	<title> Bill</title>
+	<link href="css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+	</head>

@@ -1,0 +1,6 @@
+<html>
+<body>
+
+body {background-image:url('bgdesert.jpg');}
+</body>
+</html>

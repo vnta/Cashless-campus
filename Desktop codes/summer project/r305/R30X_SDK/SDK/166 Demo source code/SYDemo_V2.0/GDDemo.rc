@@ -1,0 +1,522 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GDDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\folder_burned_system.ico"
+IDI_HEADICON            ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 157, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About..."
+FONT 9, "Arial"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,16,17,20,20
+    LTEXT           "Fingerprint Demo V2.0",IDC_STATIC,53,18,76,8,
+                    SS_NOPREFIX
+    LTEXT           "CopyRight (C) 2006-2008",IDC_STATIC,53,30,90,8
+    DEFPUSHBUTTON   "OK",IDOK,92,62,50,14,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,11,55,
+                    136,1
+END
+
+IDD_GDDEMO_DIALOG DIALOGEX 0, 0, 431, 379
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Syno 芯片测试程序"
+FONT 9, "Arial"
+BEGIN
+    CONTROL         141,IDC_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_SUNKEN | WS_BORDER,3,9,185,167,WS_EX_STATICEDGE
+    PUSHBUTTON      "打开设备(&O)",IDC_BUTTON1,14,312,71,14
+    GROUPBOX        "初始化",IDC_INIT,7,303,181,26
+    PUSHBUTTON      "获取图像",IDC_BUTTON3,196,83,45,14
+    GROUPBOX        "指纹录入",IDC_FINGERENROLL,191,104,233,26
+    PUSHBUTTON      "录入模板",IDC_BUTTON4,269,112,50,14
+    GROUPBOX        "比对",IDC_SEARCH,192,135,169,115
+    PUSHBUTTON      "单一比对(&C)",IDC_BUTTON7,303,163,56,14
+    PUSHBUTTON      "搜索",IDC_BUTTON8,302,186,56,14
+    GROUPBOX        "数据库管理",IDC_DB,361,135,63,115
+    PUSHBUTTON      "删除",IDC_BUTTON9,365,212,53,14
+    PUSHBUTTON      "清空",IDC_BUTTON10,364,161,53,14
+    LTEXT           "提示信息...",IDC_INFO,198,13,225,33
+    GROUPBOX        "",IDC_STATIC,193,5,231,63
+    CONTROL         "List1",IDC_LISTUSER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | 
+                    WS_BORDER | WS_TABSTOP,202,145,93,100
+    PUSHBUTTON      "取消当前操作",IDC_BUTTON6,283,49,68,15
+    GROUPBOX        "图像管理",IDC_IMAGEMANAGE,192,70,232,32
+    LTEXT           "欢迎使用Syno测试程序,请先打开设备，并验证口令",IDC_TIP,
+                    15,216,158,75
+    PUSHBUTTON      "连续录入",IDC_BUTTON2,328,112,50,14
+    PUSHBUTTON      "连续搜索",IDC_BUTTON5,301,212,56,14
+    CONTROL         "上传图像",IDC_CHKDEV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,203,114,50,14
+    GROUPBOX        "设备配置",IDC_DEVSETTING,7,332,181,36
+    PUSHBUTTON      "保存图像",IDC_BTN_SAVEBMP,303,83,55,14
+    PUSHBUTTON      "下载图像",IDC_BTN_DLBMP,360,82,59,14
+    COMBOBOX        IDC_COMBO_BAUD,13,349,53,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "获取随机数",IDC_BTN_RANDOM,271,267,60,14
+    GROUPBOX        "特殊功能区",IDC_SPECULE,191,253,233,55
+    PUSHBUTTON      "写记事本",IDC_BTN_WNOTE,203,287,60,14
+    PUSHBUTTON      "读记事本",IDC_BTN_RNOTE,203,267,60,14
+    PUSHBUTTON      "读有效模板数",IDC_BTN_RNUM,272,287,60,14
+    LTEXT           "波特率设置",IDC_BANDRATE,14,339,60,8
+    COMBOBOX        IDC_COMBO_PAKAGESIZE,75,349,48,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据包大小",IDC_PACKAGESIZE,75,339,52,8
+    COMBOBOX        IDC_COMBO_LEVEL,130,349,48,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "安全等级",IDC_SECURELEVEL,129,339,56,8
+    GROUPBOX        "图像处理演示",IDC_DOWITHIMG,192,311,232,57
+    PUSHBUTTON      "二值图",IDC_BTN_BIN,252,343,49,14
+    PUSHBUTTON      "细化图",IDC_BTN_THIN,306,343,49,14
+    PUSHBUTTON      "特征点细化图",IDC_BTN_TZ,360,343,60,14
+    PUSHBUTTON      "原始图像",IDC_BTN_ORIBMP,198,343,49,14
+    PUSHBUTTON      "采集指纹库",IDC_BTN_GETDB,338,267,68,14
+    CONTROL         "预览图像",IDC_Preview,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,308,145,48,10
+    LTEXT           "指纹图像预览区",IDC_IMGPREVIEW,5,0,57,8
+    GROUPBOX        "硬件信息",IDC_HDINFO,7,204,181,93
+    PUSHBUTTON      "退出程序",IDC_Exit,359,49,44,15
+    EDITTEXT        IDC_Path,199,322,189,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "路径",IDC_BUTTON13,391,321,27,14
+    LTEXT           "",IDC_OpenDev,93,314,84,9
+    PUSHBUTTON      "连续获取图像",IDC_GetImgCon,244,83,56,14
+    PUSHBUTTON      "自定义命令",IDC_USERDEFINE,339,288,68,13,NOT WS_VISIBLE
+    GROUPBOX        "Language",IDC_STATIC,7,177,180,24
+    COMBOBOX        IDC_COMLANG,58,184,74,39,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLGCOM DIALOG DISCARDABLE  0, 0, 212, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "打开设备"
+FONT 9, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,91,85,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,155,85,50,16
+    LTEXT           "串口号: ",IDC_COM,29,40,29,8
+    COMBOBOX        IDC_COMBO1,68,39,89,93,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "设置串口参数",IDC_SETTING,7,7,198,72
+END
+
+IDD_DLGUSER DIALOG DISCARDABLE  0, 0, 166, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置用户地址"
+FONT 9, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,61,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,104,61,50,16
+    LTEXT           "存放地址:",IDC_ADDR,16,25,48,8
+    EDITTEXT        IDC_EDIT1,65,23,75,12,ES_AUTOHSCROLL
+    LTEXT           "用户名称:",IDC_USERNAME,14,39,45,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT2,65,35,75,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    GROUPBOX        "设置",IDC_SETTING,8,4,148,52
+END
+
+IDD_DLG_Note DIALOG DISCARDABLE  0, 0, 192, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "写记事本"
+FONT 9, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,133,35,50,14
+    PUSHBUTTON      "退出",IDCANCEL,134,69,50,14
+    EDITTEXT        IDC_Note,14,31,112,65,ES_MULTILINE | WS_VSCROLL
+    LTEXT           "页码",IDC_PAGE,16,13,17,8
+    EDITTEXT        IDC_EDIT_PAGE,47,11,66,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_DLG_RNote DIALOG DISCARDABLE  0, 0, 191, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "读记事本"
+FONT 9, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "显示",IDOK,134,37,50,14
+    PUSHBUTTON      "退出",IDCANCEL,134,71,50,14
+    LTEXT           "页码",IDC_PAGE,13,13,17,8
+    EDITTEXT        IDC_EDIT_PAGE,41,10,66,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Note,13,30,112,65,ES_MULTILINE | WS_VSCROLL
+END
+
+IDD_DLG_FingerDB DIALOGEX 0, 0, 295, 211
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "采集样本"
+FONT 9, "Arial", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,217,187,66,16
+    CONTROL         141,IDC_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_SUNKEN | WS_BORDER,7,8,162,178,WS_EX_CLIENTEDGE
+    LTEXT           "每根手指样本个数",IDC_FINGERNUM,180,14,65,8
+    EDITTEXT        IDC_EDIT_NUMPFIN,250,11,33,14,ES_AUTOHSCROLL
+    LTEXT           "指纹库目录",IDC_FINGERPATH,180,27,41,8
+    EDITTEXT        IDC_EDIT_PATH,180,39,73,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "选择路径",IDC_BTN_GETPATH,253,39,36,14
+    GROUPBOX        "连续采集图像",IDC_GETIMAGCON,179,60,109,58
+    EDITTEXT        IDC_EDIT_RUN_NUM,227,75,50,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始采集",IDC_BTN_RUN,188,96,41,14
+    LTEXT           "图像编号",IDC_IMAGENUM1,190,77,33,8
+    GROUPBOX        "采集单枚图像",IDC_GETONE,180,122,109,61
+    EDITTEXT        IDC_EDIT_SIG_NUM,226,139,50,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "采集",IDC_BTN_SIG,188,159,41,14
+    LTEXT           "图像编号",IDC_IMAGENUM2,189,141,33,8
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL_RUN,237,96,41,14
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL_SIG,237,159,41,14
+END
+
+IDD_USERDEFINE DIALOG DISCARDABLE  0, 0, 184, 78
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义命令发送"
+FONT 9, "Arial"
+BEGIN
+    COMBOBOX        IDC_COMBO1,37,25,38,47,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,126,25,38,47,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "发送",IDC_BUTTON1,69,58,50,14
+    PUSHBUTTON      "返回",IDC_BUTTON2,125,58,50,14
+    GROUPBOX        "",IDC_STATIC,6,4,171,48
+    LTEXT           "GPIO",IDC_STATIC,17,27,17,8
+    LTEXT           "STATE",IDC_STATIC,99,28,21,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "\0"
+            VALUE "FileVersion", "2, 0, 0, 1\0"
+            VALUE "InternalName", "Fingerprint Demo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2005-2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Fingerprint Demo\0"
+            VALUE "ProductVersion", "2, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_GDDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 372
+    END
+
+    IDD_DLGCOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_DLGUSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 159
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DLG_Note, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_DLG_RNote, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_DLG_FingerDB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_USERDEFINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 180
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 74
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLGCOM DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_COMBO1, 0x403, 6, 0
+0x4f43, 0x314d, 0x0030, 
+    IDC_COMBO1, 0x403, 6, 0
+0x4f43, 0x314d, 0x0031, 
+    IDC_COMBO1, 0x403, 6, 0
+0x4f43, 0x314d, 0x0032, 
+    IDC_COMBO1, 0x403, 6, 0
+0x4f43, 0x314d, 0x0033, 
+    IDC_COMBO1, 0x403, 6, 0
+0x4f43, 0x314d, 0x0034, 
+    IDC_COMBO1, 0x403, 6, 0
+0x4f43, 0x314d, 0x0035, 
+    IDC_COMBO1, 0x403, 6, 0
+0x4f43, 0x314d, 0x0036, 
+    0
+END
+
+IDD_GDDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_BAUD, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_BAUD, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO_BAUD, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO_BAUD, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO_BAUD, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_COMBO_PAKAGESIZE, 0x403, 9, 0
+0x3233, 0x4220, 0x7479, 0x7365, "\000" 
+    IDC_COMBO_PAKAGESIZE, 0x403, 9, 0
+0x3436, 0x4220, 0x7479, 0x7365, "\000" 
+    IDC_COMBO_PAKAGESIZE, 0x403, 10, 0
+0x3231, 0x2038, 0x7942, 0x6574, 0x0073, 
+    IDC_COMBO_PAKAGESIZE, 0x403, 10, 0
+0x3135, 0x2032, 0x7942, 0x6574, 0x0073, 
+    IDC_COMBO_LEVEL, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_LEVEL, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_LEVEL, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_LEVEL, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_LEVEL, 0x403, 2, 0
+0x0035, 
+    IDC_COMLANG, 0x403, 8, 0
+0x6843, 0x6e69, 0x7365, 0x0065, 
+    IDC_COMLANG, 0x403, 8, 0
+0x6e45, 0x6c67, 0x7369, 0x0068, 
+    0
+END
+
+IDD_USERDEFINE DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 6, 0
+0x5047, 0x4f49, 0x0033, 
+    IDC_COMBO1, 0x403, 6, 0
+0x5047, 0x4f49, 0x0034, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0031, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PREVIEW      BITMAP  DISCARDABLE     "Debug\\Logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_F10,         IDC_Exit,               VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "About Syno Demo(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\GDDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

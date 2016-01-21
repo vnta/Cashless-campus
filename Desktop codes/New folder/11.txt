@@ -1,0 +1,1 @@
+5,egg,5,0,chicken,10,0,fry,4,0,curry,5,1,abcdtdf,6,1,

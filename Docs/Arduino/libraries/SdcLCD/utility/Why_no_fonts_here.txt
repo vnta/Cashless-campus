@@ -1,0 +1,6 @@
+All the fonts files are deleted to avoid possible copyright conflit. You can buind your own LCD fonts from your desktop outline fonts. For more information, visit
+
+- ArduinoExplained.blogspot.ca
+- http://www.sdcontrols.com/arduino
+
+Thanks.
